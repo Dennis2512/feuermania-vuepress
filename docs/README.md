@@ -31,6 +31,8 @@ footer: Copyright © 2021 by Dennis Neumann
 
 # Projects
 
-<example></example>
+<card-flexlist></card-flexlist>
+
+<!-- <example var='ICH' gustav='Gusti'></example> -->
 
 <!-- Start the server: cd docs, npx vuepress dev -->
