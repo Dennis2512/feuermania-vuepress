@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="container">
-    <card title="Karte 1" text="Karten 1 Text" btntxt="Klick 1"></card>
-    <card title="Karte 2" text="Karten 2 Text" btntxt="Klick 2"></card>
-    <card title="Karte 3" text="Karten 3 Text" btntxt="Klick 3"></card>
+    <card title="Karte 1" text="Karten 1 Text"></card>
+    <card title="Karte 2" text="Karten 2 Text"></card>
+    <card title="Karte 3" text="Karten 3 Text"></card>
   </div>
 </template>
 
