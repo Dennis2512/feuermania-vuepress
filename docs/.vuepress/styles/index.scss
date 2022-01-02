@@ -1,0 +1,123 @@
+html.dark ::selection {
+  color: white;
+  background: rgba($color: #ff3838, $alpha: 0.4); /* WebKit/Blink Browsers */
+}
+
+html.dark ::-moz-selection {
+  color: white;
+  background: rgba($color: #ff3838, $alpha: 0.2); /* Gecko Browsers */
+}
+
+:root ::selection {
+  color: #2c3e50;
+  background: rgba($color: #3eaf7c, $alpha: 0.4); /* WebKit/Blink Browsers */
+}
+
+:root ::-moz-selection {
+  color: #2c3e50;
+  background: rgba($color: #3eaf7c, $alpha: 0.2); /* Gecko Browsers */
+}
+
+:root {
+  scroll-behavior: smooth;
+
+  // brand colors
+  --c-brand: #3eaf7c;
+  --c-brand-light: #4abf8a;
+
+  // background colors
+  --c-bg: #ffffff;
+  --c-bg-light: #f3f4f5;
+  --c-bg-lighter: #eeeeee;
+  --c-bg-navbar: var(--c-bg);
+  --c-bg-sidebar: var(--c-bg);
+  --c-bg-arrow: #cccccc;
+
+  // text colors
+  --c-text: #2c3e50;
+  --c-text-accent: var(--c-brand);
+  --c-text-light: #3a5169;
+  --c-text-lighter: #4e6e8e;
+  --c-text-lightest: #6a8bad;
+  --c-text-quote: #999999;
+
+  // border colors
+  --c-border: #eaecef;
+  --c-border-dark: #dfe2e5;
+
+  // custom container colors
+  --c-tip: #42b983;
+  --c-tip-bg: var(--c-bg-light);
+  --c-tip-title: var(--c-text);
+  --c-tip-text: var(--c-text);
+  --c-tip-text-accent: var(--c-text-accent);
+  --c-warning: #e7c000;
+  --c-warning-bg: #fffae3;
+  --c-warning-title: #ad9000;
+  --c-warning-text: #746000;
+  --c-warning-text-accent: var(--c-text);
+  --c-danger: #cc0000;
+  --c-danger-bg: #ffe0e0;
+  --c-danger-title: #990000;
+  --c-danger-text: #660000;
+  --c-danger-text-accent: var(--c-text);
+  --c-details-bg: #eeeeee;
+
+  // badge component colors
+  --c-badge-tip: var(--c-tip);
+  --c-badge-warning: var(--c-warning);
+  --c-badge-danger: var(--c-danger);
+}
+
+html.dark {
+  // brand colors
+  // --c-brand: #3aa675;
+  // --c-brand-light: #349469;
+
+  // FeuerMania colors
+  // #FF3838
+  --c-brand: #ff3838;
+  --c-brand-light: #ff3838;
+
+  // social media
+  --c-github: #181717;
+  --c-linkedin: #0a66c2;
+  --c-googleplay: #414141;
+  --c-instagram: #e4405f;
+
+  // background colors
+  --c-bg: #181818;
+  --c-bg-light: #2c2c2c;
+  --c-bg-lighter: #262c34;
+
+  // text colors
+  --c-text: #ffffff;
+  --c-text-light: #fafafa;
+  --c-text-lighter: #f3f3f3;
+  --c-text-lightest: #f0f0f0;
+
+  // border colors
+  --c-border: #3e4c5a;
+  --c-border-dark: #34404c;
+}
+
+.hero {
+  display: none;
+}
+
+@media (min-width: 719px) {
+  .navbar-links a {
+    border-bottom: hidden !important;
+  }
+
+  .navbar-links a:hover {
+    // color: var(--c-brand);
+    border-bottom: 2px solid var(--c-text-accent) !important;
+  }
+}
+
+@media (max-width: 719px) {
+  .navbar-links a {
+    color: var(--c-text) !important;
+  }
+}
