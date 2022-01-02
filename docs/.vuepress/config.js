@@ -10,11 +10,11 @@ module.exports = {
         // NavbarItem
         {
           text: 'Projects',
-          link: '#projects',
+          link: './README.md/#projects',
         },
         {
           text: 'About',
-          link: '#about',
+          link: './README.md/#about',
         }
       ],
     },

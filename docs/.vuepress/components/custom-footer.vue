@@ -1,14 +1,16 @@
 <template lang="html">
   <div class="container">
     <div id="w">
-      Made with	<span id="heart">❤</span>
+      Made with <span id="heart">❤</span>
     </div>
     <div>
       Copyright © 2021 by Dennis Neumann
     </div>
-    <a href="#" id="w" class="impr">
+    <div id="w" class="impr">
+    <a href="./Imprint.md">
       Imprint
     </a>
+    </div>
   </div>
 </template>
 
@@ -23,11 +25,13 @@
   justify-content: space-evenly;
 }
 
-.impr {
+a {
+  color: white;
   cursor: pointer;
+  font-weight: unset;
 }
 
-.impr:hover {
+a:hover {
   color: var(--c-brand);
   transition-duration: .2s;
 }
